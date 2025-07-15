@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		BDB199C12E269E28008440B1 /* DrySkinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB199C02E269E28008440B1 /* DrySkinView.swift */; };
+		BDB199C32E26B15D008440B1 /* oily skin view.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB199C22E26B15C008440B1 /* oily skin view.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD3938BB2E254E03008EDA03 /* GitHubCollaboration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubCollaboration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB199C02E269E28008440B1 /* DrySkinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrySkinView.swift; sourceTree = "<group>"; };
+		BDB199C22E26B15C008440B1 /* oily skin view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "oily skin view.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -37,6 +39,7 @@
 		BD3938B22E254E03008EDA03 = {
 			isa = PBXGroup;
 			children = (
+				BDB199C22E26B15C008440B1 /* oily skin view.swift */,
 				BDB199C02E269E28008440B1 /* DrySkinView.swift */,
 				BD3938BD2E254E03008EDA03 /* GitHubCollaboration */,
 				BD3938BC2E254E03008EDA03 /* Products */,
@@ -125,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDB199C32E26B15D008440B1 /* oily skin view.swift in Sources */,
 				BDB199C12E269E28008440B1 /* DrySkinView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
