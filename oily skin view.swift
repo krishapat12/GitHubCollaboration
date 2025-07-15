@@ -7,17 +7,18 @@
 
 import SwiftUI
 struct oily_skin_view: View {
-    @State var choiceMade = "Options"
+    @State var choiceMade = "Pick a product"
     var body: some View {
         VStack{
             Text("Oily Skin")
-                .font(.system(size:80))
                 .foregroundColor(Color(hue: 0.229, saturation: 0.251, brightness: 0.667))
+                .font(.custom("HelveticaNeue", size:80))
             Text("Learn about cleanser, toner, serum, and mosturizer from the dropdown below. We have included a variety of products to give options. ")
+                .font(.custom("HelveticaNeue", size:25))
                 .multilineTextAlignment(.center)
             
             Text("")
-            Text("Dropdown menu")
+            
             Menu{
                 Button(action:{
                     choiceMade="Cleanser"
