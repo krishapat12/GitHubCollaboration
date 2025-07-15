@@ -1,17 +1,16 @@
 //
-//  DrySkinView.swift
+//  oily skin view.swift
 //  GitHubCollaboration
 //
 //  Created by Scholar on 7/15/25.
 //
 
 import SwiftUI
-
-struct DrySkinView: View {
+struct oily_skin_view: View {
     @State var choiceMade = "Options"
     var body: some View {
         VStack{
-            Text("Dry Skin")
+            Text("Oily Skin")
                 .font(.system(size:80))
                 .foregroundColor(Color(hue: 0.229, saturation: 0.251, brightness: 0.667))
             Text("Learn about cleanser, toner, serum, and mosturizer from the dropdown below. We have included a variety of products to give options. ")
@@ -30,21 +29,21 @@ struct DrySkinView: View {
                 Button(action:{
                     choiceMade="Serum"
                     //add the code to that pops up the description of the serum
-
+                    
                 },label:{
                     Text("Serum")
                 })
                 Button(action:{
                     choiceMade="Mosturizer"
                     //add the code to that pops up the description of the mosturizer
-
+                    
                 },label:{
                     Text("Mosturizer")
                 })
                 Button(action:{
                     choiceMade="Toner"
                     //add the code to that pops up the description of the toner
-
+                    
                 },label:{
                     Text("Toner")
                 })
@@ -54,7 +53,7 @@ struct DrySkinView: View {
                     title: {Text("\(choiceMade)") },
                     icon:{Image(systemName:"plus")}
                 )
-            
+                
             }
             .frame(width: 300.0, height: 50.0)
             .border(Color.black, width:2)
@@ -63,7 +62,7 @@ struct DrySkinView: View {
     }
 }
 
+
 #Preview {
-    DrySkinView()
+    oily_skin_view()
 }
- 
