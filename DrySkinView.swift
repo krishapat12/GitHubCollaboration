@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct DrySkinView: View {
-    @State var choiceMade = "Options"
+    @State var choiceMade = "Pick a product"
     var body: some View {
         VStack{
             Text("Dry Skin")
-                .font(.system(size:80))
+                .font(.custom("HelveticaNeue", size:80))
                 .foregroundColor(Color(hue: 0.229, saturation: 0.251, brightness: 0.667))
             Text("Learn about cleanser, toner, serum, and mosturizer from the dropdown below. We have included a variety of products to give options. ")
                 .multilineTextAlignment(.center)
-            
+                .font(.custom("HelveticaNeue", size:25))
+
             Text("")
-            Text("Dropdown menu")
             Menu{
                 Button(action:{
                     choiceMade="Cleanser"
