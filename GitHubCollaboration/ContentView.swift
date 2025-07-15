@@ -10,6 +10,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack(spacing:1){
+            Image("Image")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 400.00, height: 200.0)
+                
             Text("Welcome")
                 .font(.system(size:80))
                 .fontWeight(.heavy)
@@ -23,16 +28,18 @@ struct ContentView: View {
              
                 Text("Our story:")
                 .font(.system(size:25))
+                .multilineTextAlignment(.leading)
+            
                 Text("We wanted to create an app that have unbiased advice about skincare. ")
                 .font(.system(size:20))
                 Text("")
                  
                 
               
-                    Text("Purpose:")
+                    Text("About the app:")
                     .font(.system(size:25))
 
-                    Text("Based on your skin type a  series of skncare prodcuts will be recommended.")
+                    Text("Based on your skin type a  series of skincare prodcuts will be recommended.")
                 .font(.system(size:20))
 
                     Text("")
@@ -47,12 +54,8 @@ struct ContentView: View {
                         
                         }
                         .font(.system(size:20))
-
-
                     }
-            Image("Image")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fit)
+          
             
         }
         Spacer()
